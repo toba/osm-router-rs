@@ -3,8 +3,12 @@
 extern crate maplit;
 
 mod config;
+mod edges;
 
 use std::collections::HashMap;
+
+/// Weight given to an edge. Larger numbers indicate stronger preference.
+pub type EdgeWeight = f32;
 
 /// Permitted access types and road or rail type weighting that together define
 /// routing preferences
@@ -12,7 +16,7 @@ pub struct RouteConfig<'a> {
     pub name: &'a str,
     /// Weights keyed to road types — larger numbers indicate stronger
     /// preference
-    pub weights: HashMap<&'a str, f32>,
+    pub weights: HashMap<&'a str, EdgeWeight>,
     /// Usable access types ordered by specificity. The first item should be
     /// most general and the last most specific so when iterated, later types
     /// can override earlier ones.

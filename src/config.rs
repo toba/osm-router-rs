@@ -4,6 +4,7 @@ use osm_models::{
     way::{travel_by, way_type},
 };
 
+// TODO: load from RON file
 pub fn preferences<'a>() -> RouteMode<'a> {
     hashmap! {
         travel_by::CAR => RouteConfig {

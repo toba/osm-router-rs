@@ -94,8 +94,8 @@ checksum = "3728d817d99e5ac407411fa471ff9800a778d88a24685968b36824eaf4bee400"
 
 [[package]]
 name = "osm_models"
-version = "1.0.2"
-source = "git+https://github.com/toba/osm-models-rs.git#31062cdb18b0090cb2b3b3b4d0c8513bb617906e"
+version = "0.2.0"
+source = "git+https://github.com/toba/osm-models-rs.git#fccdea034403373d45fb6fc1d99d5adbfd0b1d47"
 dependencies = [
  "hashbrown",
 ]
