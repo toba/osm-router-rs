@@ -4,6 +4,7 @@ extern crate maplit;
 
 mod config;
 mod edges;
+mod restriction;
 
 use std::collections::HashMap;
 
